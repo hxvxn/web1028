@@ -7,7 +7,7 @@ $(document).ready(function () {
       sectionsColor: ['transparent', '#eee', 'cadetblue', '#ccc'],
       // 페이지 이동 내비게이션
       navigation: true,
-      navigationTooltips: ['About Hyundai', 'Model', 'Event', 'Customer Service'],
+      navigationTooltips: ['HAPPY CHRISTMAS', 'Object', 'Event', 'More'],
       showActiveTooltip: true,
       // 슬라이드 메뉴
       slidesNavigation: true,
@@ -61,8 +61,8 @@ $(document).ready(function () {
       $('#tab div').css({ display: 'none' })
       $('#tab div').eq(i).css({ display: 'block' });
       // 라인 처리
-      $('#tab>ul>li').css({ backgroundColor:'#444', zIndex:0,color:'#fff' });
-      $(this).css({ backgroundColor: '#fff', zIndex: 1, color:'#444' });
+      $('#tab>ul>li').css({ backgroundColor:'#3f7951', zIndex:0,color:'#fff' });
+      $(this).css({ backgroundColor: '#fff', zIndex: 1, color:'#3f7951' });
    });
 
    // 탭 메뉴 내용을 클릭 시
@@ -70,26 +70,26 @@ $(document).ready(function () {
       var num = $(this).index();
       // 새 창으로 링크
       if (num == 0) {
-         window.open('about:blank').location.href = "http://widesign.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       } else if (num == 1) {
-         window.open('about:blank').location.href = "http://hurom.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       } else if (num == 2) {
-         window.open('about:blank').location.href = "http://monami3.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       } else {
-         window.open('about:blank').location.href = "http://ikea.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       }
    });
    $('#tab div:eq(1) li').click(function () {
       var num = $(this).index();
       // 새 창으로 링크
       if (num == 0) {
-         window.open('about:blank').location.href = "http://widesign.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       } else if (num == 1) {
-         window.open('about:blank').location.href = "http://hurom.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       } else if (num == 2) {
-         window.open('about:blank').location.href = "http://monami3.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       } else {
-         window.open('about:blank').location.href = "http://ikea.dothome.co.kr";
+         window.open('about:blank').location.href = "#";
       }
    });
 

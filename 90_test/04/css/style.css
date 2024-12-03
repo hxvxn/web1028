@@ -10,7 +10,7 @@ img {border: none; vertical-align: top; width:100%; height:auto;}
 body {font-family:Arial, '맑은 고딕', Helvetica, sans-serif; font-size:12px;}
 
 /* 로고 */
-.logo {font-size:40px; position:fixed; z-index:99; left:60px; top:60px; width:350px; color:#fff; background:url(../images/logo.png) no-repeat 10px 3px;}
+.logo { position:fixed; z-index:99; left:60px; top:60px; }
 
 /* GNB */
 #menu {position:fixed; z-index:99; right:0; top:0;}
@@ -20,9 +20,9 @@ body {font-family:Arial, '맑은 고딕', Helvetica, sans-serif; font-size:12px;
 #menu a:hover {top:10px;}
 
 /* 오른쪽 페이저 버튼 색 */
-#fp-nav ul li a span {background:#ccc; color:black;}
+#fp-nav ul li a span {background:#f4f1e0; color:black;}
 /* 오른쪽 페이저 툴립 글자 색 */
-#fp-nav ul li .fp-tooltip {color:#ccc;}
+#fp-nav ul li .fp-tooltip {color:#f4f1e0;}
 
 /* 전체 섹션 */
 h1 {text-align:center; font-size:3rem;}
@@ -50,38 +50,56 @@ p {text-align:center; font-size:1rem; margin-top:30px;}
 .s2 p {color:#555;}
 .s2 #tab_wrap {height:400px; background:rgba(0,0,0,0.5);}
 .s2 #tab{width:1600px; margin:80px auto}
-.s2 #tab>ul>li{display:inline-block; width:150px; height:50px; line-height:50px; margin-bottom:30px; background:#444; text-align:center; color:#8f8e8f; cursor:pointer;  font-size:1rem; color:#fff; margin-right:-3px;}
-.s2 #tab>ul>li:first-of-type {background-color:#fff; color:#444;}
+.s2 #tab>ul>li{display:inline-block; width:200px; height:50px; line-height:50px; margin-bottom:30px; 
+background:#3f7951; text-align:center; color:#8f8e8f; cursor:pointer;  font-size:1rem; color:#fff; margin-right:-3px;}
+.s2 #tab>ul>li:first-of-type {background-color:#fff; color:#3f7951;}
 
 .s2 #tab div{display:none;}
 .s2 #tab div ul{height:400px}
-.s2 #tab div li{position:relative; display:inline-block; width:285px; height:270px; box-sizing:border-box; border:1px solid #ccc; margin:0 10px; background:no-repeat 50% 50%/80%;}
+.s2 #tab div li{position:relative; display:inline-block; width:285px; height:270px; box-sizing:border-box; border:1px solid #ccc; margin:0 10px; background:no-repeat 50% 50%;}
 .s2 #tab div:nth-of-type(1) {display:block}
-.s2 #tab #t1 li:nth-of-type(1){background-image:url(../images/ioniq.png);}
-.s2 #tab #t1 li:nth-of-type(2){background-image:url(../images/ioniq-electric.png);}
-.s2 #tab #t1 li:nth-of-type(3){background-image:url(../images/ioniq-hybrid.png);}
-.s2 #tab #t1 li:nth-of-type(4){background-image:url(../images/i30.png);}
-.s2 #tab #t2 li:nth-of-type(1){background-image:url(../images/notice_03.png);}
-.s2 #tab #t2 li:nth-of-type(2){background-image:url(../images/notice_05.png);}
-.s2 #tab #t2 li:nth-of-type(3){background-image:url(../images/notice_07.png);}
-.s2 #tab #t2 li:nth-of-type(4){background-image:url(../images/notice_09.png);}
+.s2 #tab #t1 li:nth-of-type(1){background-image:url(../images/s2_1.jpg);}
+.s2 #tab #t1 li:nth-of-type(2){background-image:url(../images/s2_2.jpg);}
+.s2 #tab #t1 li:nth-of-type(3){background-image:url(../images/s2_3.jpg);}
+.s2 #tab #t1 li:nth-of-type(4){background-image:url(../images/s2_4.jpg);}
+.s2 #tab #t2 li:nth-of-type(1){background-image:url(../images/s2_5.jpg);}
+.s2 #tab #t2 li:nth-of-type(2){background-image:url(../images/s2_6.jpg);}
+.s2 #tab #t2 li:nth-of-type(3){background-image:url(../images/s2_7.jpg);}
+.s2 #tab #t2 li:nth-of-type(4){background-image:url(../images/s2_8.jpg);}
+.s2 #tab #t3 li:nth-of-type(1){background-image:url(../images/s2_9.jpg);}
+.s2 #tab #t3 li:nth-of-type(2){background-image:url(../images/s2_10.jpg);}
+.s2 #tab #t3 li:nth-of-type(3){background-image:url(../images/s2_11.jpg);}
+.s2 #tab #t3 li:nth-of-type(4){background-image:url(../images/s2_12.jpg);}
+.s2 #tab #t4 li:nth-of-type(1){background-image:url(../images/s2_13.jpg);}
+.s2 #tab #t4 li:nth-of-type(2){background-image:url(../images/s2_14.jpg);}
+.s2 #tab #t4 li:nth-of-type(3){background-image:url(../images/s2_15.jpg);}
+.s2 #tab #t4 li:nth-of-type(4){background-image:url(../images/s2_16.jpg);}
+.s2 #tab #t5 li:nth-of-type(1){background-image:url(../images/s2_17.jpg);}
+.s2 #tab #t5 li:nth-of-type(2){background-image:url(../images/s2_18.jpg);}
+.s2 #tab #t5 li:nth-of-type(3){background-image:url(../images/s2_19.jpg);}
+.s2 #tab #t5 li:nth-of-type(4){background-image:url(../images/s2_20.jpg);}
+.s2 #tab #t6 li:nth-of-type(1){background-image:url(../images/s2_21.jpg);}
+.s2 #tab #t6 li:nth-of-type(2){background-image:url(../images/s2_22.jpg);}
+.s2 #tab #t6 li:nth-of-type(3){background-image:url(../images/s2_23.jpg);}
+.s2 #tab #t6 li:nth-of-type(4){background-image:url(../images/s2_24.jpg);}
+.s2 #tab #t7 li:nth-of-type(1){background-image:url(../images/s2_25.jpg);}
+.s2 #tab #t7 li:nth-of-type(2){background-image:url(../images/s2_26.jpg);}
+.s2 #tab #t7 li:nth-of-type(3){background-image:url(../images/s2_27.jpg);}
+.s2 #tab #t7 li:nth-of-type(4){background-image:url(../images/s2_28.jpg);}
+
 
 /* 전체모델 - 텍스트 */
 .s2 #tab div li span {position:absolute; left:0; top:0; padding:8px 20px; background:#006992;}
 .s2 #tab div li b {position:absolute; left:50%; transform:translateX(-50%); bottom:20px; font-size:1.2rem;}
 
-
 /* 3 페이지 - 이벤트 */
-.s3 .fp-tableCell {vertical-align:top;}
-.s3 h1 {position:relative; left:50%; transform:translateX(-50%); top:120px; margin-top:50px;}
-.s3 p {position:relative; left:50%; transform:translateX(-50%); top:100px;}
+.s3 {vertical-align:top;}
+.s3 h1 {position:relative; left:50%; transform:translateX(-50%); top:30px;}
+.s3 p {position:relative; left:50%; transform:translateX(-50%); top:15px;}
 
-.s3 #slide {position:relative; text-align:center; width:1200px; height:488px; margin:150px auto; overflow:hidden;}
-.s3 #slide .slide img {width:738px;}
+.s3 #slide {position:relative; text-align:center; width:1200px; height:800; margin:20px auto; overflow:hidden;}
+.s3 #slide .slide img {width:600px;}
 
-/* 슬라이드 페이저 버튼 위치, 색 */
-.fp-slidesNav ul {text-align:center; margin-bottom:70px;}
-.fp-slidesNav ul li a span {background:#fff; border-radius:0 !important;}
 /* 슬라이드 좌우 버튼 위치 */
 .fp-controlArrow {width:25px; height:25px; padding:7px;}
 .fp-controlArrow.fp-prev {border-width:0; width:25px; left:0px; background:rgba(0,0,0,0.3) url('../images/ico.png') no-repeat -3px -380px; border-color:transparent; transition:.3s; transform:rotate(180deg);}
@@ -90,7 +108,7 @@ p {text-align:center; font-size:1rem; margin-top:30px;}
 .fp-controlArrow.fp-next:hover {background-color:rgba(0,0,0,0.6);}
 
 /* 이벤트 텍스트 */
-.s3 .slide .event_txt {display:inline-block; width:462px; height:489px; background:#f6f3f2; margin-left:-3px; padding:120px 50px 100px 70px; box-sizing:border-box; text-align:left;}
+.s3 .slide .event_txt {display:inline-block; width:500px; height:800px; background:#f6f3f2; margin-left:-3px; padding:120px 50px 100px 70px; box-sizing:border-box; text-align:left;}
 .s3 .slide .event_txt small {font-size:14px; color:#626262;}
 .s3 .slide .event_txt h2 {font-size:26px; color:#111; margin:20px 0 100px 0;}
 
