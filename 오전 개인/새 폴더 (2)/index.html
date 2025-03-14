@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScrollTrigger Horizontal Scroll (Main Page)</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 헤더 (메인 페이지에서 추가) */
+    .header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .scroll-container {
+      width: 100%;
+      height: 100vh; /* 화면 크기만큼 설정 */
+      overflow: hidden;
+    }
+
+    .list-wrapper {
+      display: flex;
+      width: 300vw; /* 가로로 긴 리스트 */
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      gap: 20px;
+    }
+
+    li {
+      width: 200px;
+      height: 200px;
+      background: lightcoral;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    /* 가로 스크롤 후 추가 콘텐츠 */
+    .content {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #333;
+      color: white;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 메인 섹션 -->
+  <div class="header">
+    메인 페이지 - 아래로 스크롤하세요
+  </div>
+
+  <!-- 가로 스크롤 영역 -->
+  <div class="scroll-container">
+    <div class="list-wrapper">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 가로 스크롤 후 추가 콘텐츠 -->
+  <div class="content">
+    가로 스크롤이 끝난 후 콘텐츠
+  </div>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".list-wrapper", {
+      x: "-200vw", // 리스트를 왼쪽으로 이동
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".scroll-container",
+        start: "top top",
+        end: "bottom top",
+        scrub: true, // 스크롤 속도에 따라 자연스럽게 움직임
+        pin: true, // 스크롤하는 동안 고정
+      }
+    });
+  </script>
+
+</body>
+</html>
